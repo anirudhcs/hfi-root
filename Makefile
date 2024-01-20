@@ -12,7 +12,7 @@ CURR_TIME=$(shell date --iso=seconds)
 PARALLEL_COUNT=$(shell nproc)
 REPO_PATH=$(shell realpath .)
 
-DIRS=hw_isol_gem5 hfi_wasm2c_sandbox_compiler hfi_misc rlbox_hfi_wasm2c_sandbox hfi_firefox hfi-sightglass rust_libloading_aslr btbflush-module lucet-spectre hfi_spectre_webserver hfi-nginx erim-nginx node-hfi-opts hfi-safeside hfi-transientfail
+DIRS=hw_isol_gem5 hfi_wasm2c_sandbox_compiler hfi_misc rlbox_hfi_wasm2c_sandbox hfi_firefox hfi-sightglass rust_libloading_aslr btbflush-module lucet-spectre hfi_spectre_webserver hfi-nginx erim-nginx hfi-safeside hfi-transientfail
 
 hw_isol_gem5:
 	git clone --recursive git@github.com:PLSysSec/hw_isol_gem5.git
@@ -21,7 +21,7 @@ hfi_wasm2c_sandbox_compiler:
 	git clone --recursive git@github.com:PLSysSec/hfi_wasm2c_sandbox_compiler.git
 
 hfi_misc:
-	git clone --recursive git@github.com:PLSysSec/hfi_misc.git
+	git clone --recursive git@github.com:anirudhcs/hfi_misc.git
 
 rlbox_hfi_wasm2c_sandbox:
 	git clone --recursive git@github.com:PLSysSec/rlbox_hfi_wasm2c_sandbox
@@ -55,9 +55,6 @@ hfi-nginx:
 erim-nginx:
 	git clone --recursive git@github.com:PLSysSec/hfi-nginx.git $@
 	cd $@ && git checkout mpk
-
-node-hfi-opts:
-	git clone --recursive git@github.com:PLSysSec/node-hfi-opts.git
 
 hfi-safeside:
 	git clone --recursive git@github.com:PLSysSec/hfi-safeside.git
