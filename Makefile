@@ -27,7 +27,7 @@ rlbox_hfi_wasm2c_sandbox:
 	git clone --recursive git@github.com:PLSysSec/rlbox_hfi_wasm2c_sandbox
 
 hfi_firefox:
-	git clone --recursive git@github.com:PLSysSec/hfi_firefox.git
+	git clone --recursive git@github.com:anirudhcs/hfi_firefox.git
 
 sightglass:
 	git clone https://github.com/bytecodealliance/sightglass
