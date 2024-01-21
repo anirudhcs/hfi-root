@@ -85,7 +85,7 @@ bootstrap: get_source
 		cpuset cpufrequtils xvfb gnuplot npm \
 		ca-certificates curl gnupg lsb-release libssl-dev \
 		apache2-utils jq libseccomp-dev gawk
-	cd hfi_firefox/mybuild && make bootstrap
+	# cd hfi_firefox/mybuild && make bootstrap
 	wget https://github.com/sharkdp/hyperfine/releases/download/v1.15.0/hyperfine_1.15.0_amd64.deb
 	sudo dpkg -i hyperfine_1.15.0_amd64.deb
 	pip3 install simplejson matplotlib
